@@ -207,36 +207,6 @@ fieldset {
   line-height: 22px;
 }
 
-.button {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 22px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $primary;
-  background: #000;
-  border: none;
-  max-width: max-content;
-  padding: 9px 22px;
-  cursor: pointer;
-  &-link {
-    display: block;
-    max-width: max-content;
-  }
-}
-
-.button:hover {
-  background: #c29974;
-}
-
-.button:active {
-  background: #cfaf91;
-}
-
-.button:disabled {
-  background: #c1c1c1;
-}
-
 .breadcrumbs {
   margin-top: 15px;
   margin-bottom: 50px;

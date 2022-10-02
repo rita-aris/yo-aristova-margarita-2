@@ -30,7 +30,46 @@
   </head>
   <body>
     @@include('blocks/header.html')
-    <main></main>
+    <main>
+      <section class="main">
+        <div class="container container-column">
+          <div class="main-background">
+            <div class="count-wrapper">
+              <span class="count">01</span>
+              <div class="control-wrapper">
+                <button class="control">
+                  <span class="control__line control__line--checked"></span>
+                </button>
+                <button class="control">
+                  <span class="control__line"></span>
+                </button>
+                <button class="control">
+                  <span class="control__line"></span>
+                </button>
+                <button class="control">
+                  <span class="control__line"></span>
+                </button>
+              </div>
+            </div>
+            <div class="main-info">
+              <h1 class="title">THE OOH NOO COLLECTION</h1>
+              <span class="designed">Designed in Slovenia</span>
+              @@include('blocks/button.html', {"name": "EXPLORE NOW" })
+            </div>
+          </div>
+          <p class="offer">
+            Free (continental) USA shipping on all orders of $100 USD or more!
+          </p>
+          <img
+            src="./img/monster.png"
+            alt="Image: Monster"
+            class="banner"
+            width="636"
+            height="490"
+          />
+        </div>
+      </section>
+    </main>
     @@include('blocks/footer.html')
 
     <script src="js/app.js" defer></script>

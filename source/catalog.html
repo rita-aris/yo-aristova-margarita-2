@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>DLK</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet" />
+    <!-- endbuild -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main>
+      <section class="catalog">
+        <div class="container">
+          <h1 class="title">Category Products</h1>
+          <nav class="breadcrumbs">
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-list__item">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="breadcrumbs-list__item">
+                <a href="./catalog.html">Catalog</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="catalog-list-wrapper">
+            <ul class="catalog-list">
+              <li class="catalog-list__item">
+                <img
+                  src="../img/apparel_kids.jpg"
+                  alt="Image: Apparel Kids"
+                  class="catalog-list__image"
+                  width="280"
+                  height="270"
+                />
+                <a href="#"> <h4 class="groups">APPAREL KIDS</h4></a>
+              </li>
+              <li class="catalog-list__item">
+                <img
+                  src="../img/holiday_shop.jpg"
+                  alt="Image: Holiday Shop"
+                  class="catalog-list__image"
+                  width="280"
+                  height="270"
+                />
+                <a href="#"> <h4 class="groups">HOLIDAY SHOP</h4></a>
+              </li>
+              <li class="catalog-list__item">
+                <img
+                  src="../img/toys.jpg"
+                  alt="Image: Toys"
+                  class="catalog-list__image"
+                  width="280"
+                  height="270"
+                />
+                <a href="../pages/toys.html"> <h4 class="groups">TOYS</h4></a>
+              </li>
+            </ul>
+            <ul class="catalog-list catalog-list--end">
+              <li class="catalog-list__item">
+                <img
+                  src="../img/accessories.jpg"
+                  alt="Image: Accessories"
+                  class="catalog-list__image"
+                  width="280"
+                  height="270"
+                />
+                <a href="#"> <h4 class="groups">ACCESSORIES</h4></a>
+              </li>
+              <li class="catalog-list__item">
+                <img
+                  src="../img/sale.jpg"
+                  alt="Image: Sale"
+                  class="catalog-list__image"
+                  width="280"
+                  height="270"
+                />
+                <a href="#"> <h4 class="groups">SALE</h4></a>
+              </li>
+              <li class="catalog-list__item">
+                <img
+                  src="../img/apparel_adults.jpg"
+                  alt="Image: Apparel Adults"
+                  class="catalog-list__image"
+                  width="280"
+                  height="270"
+                />
+                <a href="#"> <h4 class="groups">APPAREL ADULTS</h4></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="description">
+        <div class="container">
+          <div class="description-wrapper">
+            <h2 class="subtitle">Product Description</h2>
+            <div class="description-info">
+              <p class="info">
+                Interactive doll Zapf Creation Baby Born Sister can drink from a
+                bottle and almost really cry. You can even bathe her, just like
+                a little sister.
+              </p>
+              <p class="info">
+                A toy with a height of 43 cm bends its knees, the head rotates,
+                it can stand upright. Such a doll will be an excellent choice
+                for a gift for a girl from 4 years old.
+              </p>
+              <p class="info">
+                The set includes a miniature set of fashionable clothes, a
+                hairbrush, a bottle for water, a pair of hairpins and elastic
+                bands for hair, as well as two bracelets: one for the doll, the
+                other for her young mistress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

@@ -256,3 +256,48 @@
   left: 30px;
   margin-bottom: -80px;
 }
+
+.blog {
+  margin: 60px 0 60px 0;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    margin: 50px 0 40px 0;
+    &__item {
+      max-width: 380px;
+    }
+    &__image {
+      width: 380px;
+      height: 220px;
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-family: "Montserrat", Arial, sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 31px;
+      margin-bottom: 15px;
+    }
+    &__info {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+}
+
+.blog-list__title:hover,
+.blog-list__title:active {
+  text-decoration: underline;
+}
+
+.date {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #818181;
+  margin-bottom: 7px;
+}

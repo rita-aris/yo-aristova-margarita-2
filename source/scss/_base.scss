@@ -205,6 +205,9 @@ fieldset {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  &--margin {
+    margin-bottom: 10px;
+  }
 }
 
 .breadcrumbs {
@@ -228,7 +231,7 @@ fieldset {
 }
 
 .breadcrumbs-list__item:not(:last-child)::after {
-  content: url("../static/icons/small_arrow.svg");
+  content: url("../img/small_arrow.svg");
   margin-left: 20px;
 }
 

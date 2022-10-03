@@ -363,3 +363,216 @@
   text-transform: uppercase;
   color: $sand;
 }
+
+.toys {
+  margin: 60px 0 60px 0;
+}
+
+.filter {
+  background: rgba(125, 151, 218, 0.2);
+  padding: 42px 0 42px 0;
+  margin-bottom: 60px;
+  &-form {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.cost {
+  margin-right: 108px;
+}
+
+/* input range */
+input[type="range"].styled-slider {
+  height: 2em;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+
+input[type="range"].styled-slider.slider-progress {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 24px + var(--ratio) * (100% - 24px));
+}
+
+input[type="range"].styled-slider:focus {
+  outline: none;
+}
+
+input[type="range"].styled-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/range.svg");
+  margin-top: calc(4px * 0.5 - 24px * 0.5);
+  cursor: pointer;
+}
+
+input[type="range"].styled-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border: none;
+  border-radius: 0.5em;
+  background: #808080;
+  box-shadow: none;
+}
+
+input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track {
+  background: linear-gradient(#c29974, #c29974) 0 / var(--sx) 100% no-repeat,
+    #808080;
+}
+
+.input-cost {
+  position: relative;
+  width: 188px;
+  &::before {
+    position: absolute;
+    top: 30px;
+    content: "0";
+  }
+  &::after {
+    position: absolute;
+    top: 30px;
+    left: 170px;
+    content: "500";
+  }
+}
+
+.color {
+  margin-right: 124px;
+  &-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    &__item {
+      display: flex;
+      column-gap: 10px;
+    }
+  }
+}
+
+.shipping {
+  margin-right: 69px;
+  &-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    &__item {
+      display: flex;
+      column-gap: 10px;
+    }
+  }
+}
+
+.color-list__item:hover,
+.shipping-list__item:hover {
+  text-decoration: underline;
+}
+
+.amount {
+  margin-right: 60px;
+  &-list {
+    display: flex;
+    &__input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+    &__label {
+      display: inline-block;
+      background-color: $primary;
+      width: 80px;
+      padding: 7px 19px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}
+
+.amount-list__input:checked + .amount-list__label {
+  background-color: #f3d0db;
+}
+
+.amount-list__input:hover + .amount-list__label {
+  background-color: #eddeeb;
+}
+
+.button-apply {
+  margin-top: 37px;
+}
+
+.headline {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.product-list__price {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 28px;
+  margin-bottom: 58px;
+  &__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  &__price {
+    margin-top: 15px;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::before {
+      position: absolute;
+      top: 89px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: "Learn more";
+      width: 207px;
+      height: 207px;
+      background: #e5eaf8;
+      font-family: "Montserrat", Arial, sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 29px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $secondary;
+      visibility: hidden;
+    }
+  }
+  &__image {
+    width: 380px;
+    height: 385px;
+    margin-bottom: 30px;
+  }
+}
+
+.product-list__item:hover::before {
+  visibility: visible;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.product-list__item:active::before {
+  visibility: visible;
+  opacity: 0.67;
+  cursor: pointer;
+}

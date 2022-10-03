@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>DLK</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet" />
+    <!-- endbuild -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main>
+      <section class="contacts">
+        <div class="container">
+          <h1 class="title">Contact Us</h1>
+          <nav class="breadcrumbs">
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-list__item">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="breadcrumbs-list__item">
+                <a href="./contacts.html">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts-wrapper">
+            <form action="#" class="form">
+              <div class="form-wrapper">
+                <div>
+                  <label for="input-name" class="form__label">Name</label>
+                  <input
+                    type="text"
+                    id="input-name"
+                    placeholder="Ivan Ivanov"
+                    class="form__input name"
+                  />
+                </div>
+                <div class="phone-email">
+                  <div>
+                    <label for="input-phone" class="form__label">Phone</label>
+                    <input
+                      type="tel"
+                      id="input-phone"
+                      class="form__input phone"
+                    />
+                  </div>
+                  <div>
+                    <label for="input-email" class="form__label">Email</label>
+                    <input
+                      type="email"
+                      id="input-email"
+                      class="form__input email"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label for="input-message" class="form__label">Message</label>
+                  <textarea
+                    id="input-message"
+                    class="form__input message"
+                  ></textarea>
+                </div>
+                <div class="personal">
+                  <input
+                    type="checkbox"
+                    class="form__input checkbox"
+                    id="input-personal"
+                    checked
+                  />
+                  <label for="input-personal" class="form__label"
+                    >By clicking on the button, you consent to the processing of
+                    your personal data</label
+                  >
+                </div>
+                <button type="submit" class="button">Submit</button>
+              </div>
+            </form>
+            <div class="contacts-info">
+              <p class="info">
+                Our support team are on-hand to assist with any issues you are
+                experiencing.
+              </p>
+              <p class="info">
+                Please use the form to contact us with your needs. Send us a
+                message and we'll respond as soon as possible.
+              </p>
+              <p class="call">An expert is waiting to help you!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

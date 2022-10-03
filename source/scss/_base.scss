@@ -121,13 +121,13 @@ fieldset {
   display: inline-block;
   width: 19px;
   height: 19px;
-  background-image: url("../static/icons/checkbox_off.svg");
+  background-image: url("../img/checkbox_off.svg");
   margin-right: 15px;
   cursor: pointer;
 }
 
 .checkbox:checked + label::before {
-  background-image: url("../static/icons/checkbox_on.svg");
+  background-image: url("../img/checkbox_on.svg");
 }
 
 .radio {
@@ -147,13 +147,13 @@ fieldset {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url("../static/icons/radio_off.svg");
+  background-image: url("../img/radio_off.svg");
   margin-right: 10px;
   cursor: pointer;
 }
 
 .radio:checked + label::before {
-  background-image: url("../static/icons/radio_on.svg");
+  background-image: url("../img/radio_on.svg");
 }
 
 .title {

@@ -576,3 +576,48 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
   opacity: 0.67;
   cursor: pointer;
 }
+
+.popup--visible {
+  visibility: visible;
+}
+
+.popup {
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(125, 151, 218, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  &__dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    width: 680px;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: -35px;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  &__icon {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.close-button__icon:hover,
+.close-button__icon:active {
+  opacity: 0.7;
+}

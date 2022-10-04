@@ -256,7 +256,74 @@
       </div>
     </main>
     @@include('blocks/footer.html')
+    <section class="popup">
+      <h1 class="hidden">EXPLORE NOW</h1>
+      <!-- Синяя подложка -->
+      <div class="popup__overlay"></div>
+      <!-- -->
+      <div class="popup__dialog">
+        <button class="close-button">
+          <svg class="close-button__icon" width="25" height="25">
+            <title>Icon: Close Button</title>
+            <use xlink:href="./img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form action="#" class="form">
+          <div class="form-wrapper">
+            <div>
+              <label for="input-name-popup" class="form__label">Name</label>
+              <input
+                type="text"
+                id="input-name-popup"
+                class="form__input name"
+              />
+            </div>
+            <div class="phone-email">
+              <div>
+                <label for="input-phone-popup" class="form__label">Phone</label>
+                <input
+                  type="tel"
+                  id="input-phone-popup"
+                  class="form__input phone"
+                />
+              </div>
+              <div>
+                <label for="input-email-popup" class="form__label">Email</label>
+                <input
+                  type="email"
+                  id="input-email-popup"
+                  class="form__input email"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="input-message-popup" class="form__label"
+                >Message</label
+              >
+              <textarea
+                id="input-message-popup"
+                class="form__input message"
+              ></textarea>
+            </div>
+            <div class="personal">
+              <input
+                type="checkbox"
+                class="form__input checkbox"
+                id="input-personal"
+              />
+              <label for="input-personal" class="form__label"
+                >By clicking on the button, you consent to the processing of
+                your personal data</label
+              >
+            </div>
+            @@include('blocks/button.html', { "type": "submit", "name":
+            "Submit", "class": "" })
+          </div>
+        </form>
+      </div>
+    </section>
 
     <script src="js/app.js" defer></script>
+    <script src="js/index.js" defer></script>
   </body>
 </html>

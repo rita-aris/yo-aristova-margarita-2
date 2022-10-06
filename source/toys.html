@@ -35,23 +35,23 @@
         <div class="container">
           <h1 class="title">Toy for kids</h1>
           <nav class="breadcrumbs">
-            <ul class="breadcrumbs-list">
-              <li class="breadcrumbs-list__item">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
                 <a href="./index.html">Home</a>
               </li>
-              <li class="breadcrumbs-list__item">
+              <li class="breadcrumbs__item">
                 <a href="./catalog.html">Catalog</a>
               </li>
-              <li class="breadcrumbs-list__item">
+              <li class="breadcrumbs__item">
                 <a href="./toys.html">Toys</a>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="filter">
+        <div class="filter toys__filter">
           <div class="container">
             <form action="#" class="filter-form">
-              <div class="cost">
+              <div class="filter-form__cost">
                 <label for="input-cost" class="headline">Cost</label>
                 <input
                   type="range"
@@ -62,7 +62,7 @@
                   class="input-cost styled-slider slider-progress"
                 />
               </div>
-              <fieldset class="color">
+              <fieldset class="color filter-form__color">
                 <legend class="headline">Color</legend>
                 <ul class="color-list">
                   <li class="color-list__item">
@@ -88,7 +88,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="shipping">
+              <fieldset class="shipping filter-form__shipping">
                 <legend class="headline">Delivery</legend>
                 <ul class="shipping-list">
                   <li class="shipping-list__item">
@@ -112,7 +112,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="amount">
+              <fieldset class="amount filter-form__amount">
                 <legend class="headline">Amount</legend>
                 <ul class="amount-list">
                   <li class="amount-list__item">
@@ -152,7 +152,7 @@
                 </ul>
               </fieldset>
               @@include('blocks/button.html', { "type": "submit", "name":
-              "Apply", "class": "button-apply" })
+              "Apply", "class": "filter-form__button" })
             </form>
           </div>
         </div>
@@ -227,30 +227,7 @@
               <span class="product-list__price">$56.00 USD</span>
             </li>
           </ul>
-          <nav class="nav-list">
-            <button class="arrow">
-              <svg class="arrow__icon" width="18" height="30">
-                <title>Icon: Arrow Prev</title>
-                <use xlink:href="../img/sprite.svg#arrow_prev"></use>
-              </svg>
-            </button>
-            <ol class="pagination">
-              <li>
-                <a href="#" class="pagination__link pagination__link--active"
-                  >1</a
-                >
-              </li>
-              <li><a href="#" class="pagination__link">2</a></li>
-              <li><a href="#" class="pagination__link">3</a></li>
-              <li><a href="#" class="pagination__link">4</a></li>
-            </ol>
-            <button class="arrow">
-              <svg class="arrow__icon" width="18" height="30">
-                <title>Icon: Arrow Next</title>
-                <use xlink:href="../img/sprite.svg#arrow_next"></use>
-              </svg>
-            </button>
-          </nav>
+          @@include('blocks/pagination.html')
         </div>
       </section>
     </main>

@@ -35,69 +35,18 @@
         <div class="container">
           <h1 class="title">Contact Us</h1>
           <nav class="breadcrumbs">
-            <ul class="breadcrumbs-list">
-              <li class="breadcrumbs-list__item">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
                 <a href="./index.html">Home</a>
               </li>
-              <li class="breadcrumbs-list__item">
+              <li class="breadcrumbs__item">
                 <a href="./contacts.html">Contact Us</a>
               </li>
             </ul>
           </nav>
-          <div class="contacts-wrapper">
-            <form action="#" class="form">
-              <div class="form-wrapper">
-                <div>
-                  <label for="input-name" class="form__label">Name</label>
-                  <input
-                    type="text"
-                    id="input-name"
-                    placeholder="Ivan Ivanov"
-                    class="form__input name"
-                  />
-                </div>
-                <div class="phone-email">
-                  <div>
-                    <label for="input-phone" class="form__label">Phone</label>
-                    <input
-                      type="tel"
-                      id="input-phone"
-                      class="form__input phone"
-                    />
-                  </div>
-                  <div>
-                    <label for="input-email" class="form__label">Email</label>
-                    <input
-                      type="email"
-                      id="input-email"
-                      class="form__input email"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label for="input-message" class="form__label">Message</label>
-                  <textarea
-                    id="input-message"
-                    class="form__input message"
-                  ></textarea>
-                </div>
-                <div class="personal">
-                  <input
-                    type="checkbox"
-                    class="form__input checkbox"
-                    id="input-personal"
-                    checked
-                  />
-                  <label for="input-personal" class="form__label"
-                    >By clicking on the button, you consent to the processing of
-                    your personal data</label
-                  >
-                </div>
-                @@include('blocks/button.html', { "type": "submit", "name":
-                "Submit", "class": "" })
-              </div>
-            </form>
-            <div class="contacts-info">
+          <div class="contacts__wrapper">
+            @@include('blocks/form.html')
+            <div class="contacts__info">
               <p class="info">
                 Our support team are on-hand to assist with any issues you are
                 experiencing.
@@ -106,7 +55,7 @@
                 Please use the form to contact us with your needs. Send us a
                 message and we'll respond as soon as possible.
               </p>
-              <p class="call">An expert is waiting to help you!</p>
+              <p class="contacts__call">An expert is waiting to help you!</p>
             </div>
           </div>
         </div>

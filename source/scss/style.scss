@@ -19,6 +19,7 @@
 @import "_blocks/header";
 @import "_blocks/button";
 @import "_blocks/category-list";
+@import "_blocks/form";
 @import "_blocks/footer";
 
 /*
@@ -572,12 +573,14 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
     z-index: 11;
     width: 680px;
   }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -35px;
+  }
 }
 
 .close-button {
-  position: absolute;
-  top: 0;
-  right: -35px;
   width: 25px;
   height: 25px;
   background-color: transparent;

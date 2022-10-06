@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", function () {
-  var star = document.querySelector(".rating-group");
+  var star = document.querySelector(".rating__group");
   var rating = document.querySelector(".rating__caption");
 
   star.addEventListener("mouseover", function () {

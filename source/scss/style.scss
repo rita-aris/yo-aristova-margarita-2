@@ -38,26 +38,54 @@
   то он должен был бы быть в файле _blocks/coming-soon.scss
 */
 
-.category,
-.delivery,
-.awards {
+.mb {
   margin-bottom: 90px;
 }
 
 .main {
-  margin-top: 129px;
-  margin-bottom: 90px;
-  &-background {
+  padding-top: 129px;
+  &__background {
     display: flex;
     column-gap: 44px;
     background: #eee4db;
   }
-  &-info {
+  &__count {
+    margin: 17px 0 10px 28px;
+  }
+  &__control {
+    margin-top: 10px;
+  }
+  &__info {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
     max-width: 307px;
     margin: 89px 0 89px 0;
+  }
+  &__designed {
+    font-family: "Crimson Text", Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  &__offer {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary;
+    background: $sand;
+    padding: 11px 0;
+    z-index: 3;
+  }
+  &__banner {
+    position: absolute;
+    top: -89px;
+    right: 100px;
+    width: 636px;
+    height: 490px;
   }
 }
 
@@ -73,18 +101,17 @@
 }
 
 .control {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
   width: 31px;
-  height: 3px;
-  border: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  &-wrapper {
-    display: flex;
-    flex-direction: column;
-    row-gap: 11px;
+  &__button {
     width: 31px;
-    margin-top: 10px;
+    height: 3px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
   }
   &__line {
     display: block;
@@ -113,104 +140,61 @@
   }
 }
 
-.designed {
-  font-family: "Crimson Text", Arial, sans-serif;
-  font-style: italic;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
-}
-
-.banner {
-  position: absolute;
-  top: -89px;
-  right: 100px;
-  width: 636px;
-  height: 490px;
-}
-
-.offer {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $primary;
-  background: $sand;
-  padding: 11px 0;
-  z-index: 3;
-}
-
-.arrows-wrapper {
-  display: flex;
-  align-items: center;
-  column-gap: 20px;
-  max-width: 680px;
-}
-
 .arrows {
   display: flex;
   column-gap: 6px;
-  &-wrapper {
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-    max-width: 680px;
-  }
-  &-button {
+  &__button {
     width: 37px;
     height: 37px;
     background: rgba(112, 187, 220, 0.2);
     border: none;
     cursor: pointer;
     padding: 0;
-    &__icon {
-      width: 18px;
-      height: 30px;
-      stroke: $secondary;
-    }
+  }
+  &__icon {
+    width: 18px;
+    height: 30px;
+    stroke: $secondary;
   }
 }
 
 .delivery {
-  &-wrapper {
+  &__wrapper {
     display: flex;
     column-gap: 60px;
   }
-  &-image {
+  &__image {
     width: 480px;
     height: 559px;
   }
-  &-info {
+  &__info {
     max-width: 540px;
     margin: 30px 0 57px 0;
   }
-  &-list {
+  &__list {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
     margin: 6px 0 29px 0;
-    &__title {
-      display: inline-block;
+  }
+  &__title {
+    display: inline-block;
+    &--checked {
+      font-weight: 700;
+      background-color: rgba(112, 187, 220, 0.2);
+      padding: 11px 178px 10px 60px;
     }
   }
-}
-
-.delivery-list__title--checked {
-  font-weight: 700;
-  background-color: rgba(112, 187, 220, 0.2);
-  padding: 11px 178px 10px 60px;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 26px;
+  }
 }
 
 .shift {
   margin-left: 60px;
-}
-
-.info-wrapper {
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
-  margin-bottom: 26px;
 }
 
 .awards-list {
@@ -222,38 +206,28 @@
 .about-wrapper {
   display: flex;
   column-gap: 57px;
-  padding-top: 25px;
-  margin-bottom: 45px;
   min-height: 359px;
-}
-
-.design,
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  width: 543px;
-  height: fit-content;
-  background-color: #e1f0f7;
+  padding-top: 25px;
+  padding-bottom: 60px;
 }
 
 .design {
-  padding: 0 30px 27px 30px;
+  @include make-box(27px);
+  &__info {
+    margin-bottom: 10px;
+  }
 }
 
-.contact-info {
-  padding: 0 30px 102px 30px;
-}
-
-.button--margin {
-  margin-top: 10px;
-}
-
-.map {
-  position: relative;
-  top: -80px;
-  left: 30px;
-  margin-bottom: -80px;
+.contact {
+  &__info {
+    @include make-box(102px);
+  }
+  &__map {
+    position: relative;
+    top: -80px;
+    left: 30px;
+    margin-bottom: -80px;
+  }
 }
 
 .blog {

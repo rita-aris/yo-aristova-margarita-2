@@ -1,60 +1,56 @@
 <footer class="footer">
   <div class="container">
-    <div class="footer-wrapper">
-      <section class="footer-section">
-        <h5 class="footer-title">Navigation</h5>
+    <div class="footer__wrapper">
+      <section class="footer__section">
+        <h5 class="footer__title">Navigation</h5>
         <nav>
-          <ul class="footer-nav">
-            <li><a href="#" class="footer-nav__link">About Us</a></li>
-            <li><a href="#" class="footer-nav__link">Blog</a></li>
+          <ul class="footer__nav">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Blog</a></li>
             <li>
-              <a href="#" class="footer-nav__link">Design Services</a>
+              <a href="#" class="footer__link">Design Services</a>
             </li>
-            <li><a href="#" class="footer-nav__link">Featured On</a></li>
+            <li><a href="#" class="footer__link">Featured On</a></li>
             <li>
-              <a href="#" class="footer-nav__link">2018 Holiday Catalog</a>
+              <a href="#" class="footer__link">2018 Holiday Catalog</a>
             </li>
             <li>
-              <a href="#" class="footer-nav__link">Shop By Designer</a>
+              <a href="#" class="footer__link">Shop By Designer</a>
             </li>
           </ul>
         </nav>
       </section>
-      <section class="footer-section">
-        <h5 class="footer-title">Customer Information</h5>
-        <div class="footer-lines"></div>
+      <section class="footer__section">
+        <h5 class="footer__title">Customer Information</h5>
         <nav>
-          <ul class="footer-nav">
+          <ul class="footer__nav">
             <li>
-              <a href="../../contacts.html" class="footer-nav__link"
-                >Contact Us</a
-              >
+              <a href="../../contacts.html" class="footer__link">Contact Us</a>
             </li>
             <li>
-              <a href="#" class="footer-nav__link">Sale Exclusions</a>
+              <a href="#" class="footer__link">Sale Exclusions</a>
             </li>
             <li>
-              <a href="#" class="footer-nav__link">Shipping & Returns</a>
+              <a href="#" class="footer__link">Shipping & Returns</a>
             </li>
             <li>
-              <a href="#" class="footer-nav__link">Terms & Conditions</a>
+              <a href="#" class="footer__link">Terms & Conditions</a>
             </li>
-            <li><a href="#" class="footer-nav__link">Privacy Policy</a></li>
-            <li><a href="#" class="footer-nav__link">Search</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Search</a></li>
           </ul>
         </nav>
       </section>
-      <section class="footer-section">
-        <h5 class="footer-title">Connect</h5>
-        <div class="footer-lines"></div>
+      <section class="footer__section">
+        <h5 class="footer__title">Connect</h5>
         <form action="#">
-          <div class="footer-form">
+          <div class="connect">
             <label for="input-email-footer"></label>
             <input
               type="email"
               id="input-email-footer"
               placeholder="Email"
-              class="footer-input"
+              class="connect__input"
             />
             @@include('blocks/button.html', { "type": "submit", "name": "Join",
             "class": "" })
@@ -112,10 +108,10 @@
         </ul>
       </section>
     </div>
-    <div class="footer-bottom-wrapper">
-      <fieldset class="rating">
+    <div class="footer__bottom">
+      <fieldset class="rating footer__section">
         <legend class="rating__caption">Company Rating</legend>
-        <div class="rating-group">
+        <div class="rating__group">
           <input
             type="radio"
             name="star"
@@ -153,8 +149,10 @@
           />
         </div>
       </fieldset>
-      <span class="footer-bottom">Copyright © 2018 Dlk • Design Life Kids</span>
-      <a href="#" class="footer-bottom footer-bottom--light"
+      <span class="footer__copyright footer__section"
+        >Copyright © 2018 Dlk • Design Life Kids</span
+      >
+      <a href="#" class="footer__company footer__section"
         >Web Design — Direct Line Development</a
       >
     </div>

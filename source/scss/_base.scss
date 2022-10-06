@@ -42,68 +42,6 @@ fieldset {
   padding: 0;
 }
 
-.form {
-  width: 680px;
-  background-color: #e5eaf8;
-  padding: 42px 40px;
-  &-wrapper {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-  }
-  &__label {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19px;
-    margin-bottom: 3px;
-  }
-  &__personal {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-  }
-  &__input {
-    background: $primary;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    outline: none;
-  }
-}
-
-.form__input:hover,
-.form__input:focus {
-  border-color: rgba(194, 153, 116, 0.7);
-}
-
-.name {
-  width: 600px;
-  min-height: 50px;
-  ::placeholder {
-    padding-left: 20px;
-  }
-}
-
-.phone-email {
-  display: flex;
-}
-
-.phone,
-.email {
-  width: 290px;
-  min-height: 50px;
-}
-
-.message {
-  width: 600px;
-  min-height: 150px;
-  resize: none;
-}
-
-.personal {
-  display: flex;
-  align-items: center;
-}
-
 .checkbox {
   position: absolute;
   z-index: -1;

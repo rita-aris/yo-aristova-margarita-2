@@ -20,6 +20,7 @@
 @import "_blocks/button";
 @import "_blocks/category-list";
 @import "_blocks/form";
+@import "_blocks/pagination";
 @import "_blocks/footer";
 
 /*
@@ -232,13 +233,15 @@
 }
 
 .blog {
-  margin: 60px 0 60px 0;
+  padding: 60px 0 60px 0;
+  &__list {
+    margin-bottom: 40px;
+  }
   &-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 32px;
-    margin: 50px 0 40px 0;
     &__item {
       max-width: 380px;
     }
@@ -259,21 +262,20 @@
       font-size: 18px;
       line-height: 25px;
     }
+    &__date {
+      display: block;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #818181;
+      margin-bottom: 7px;
+    }
   }
 }
 
 .blog-list__title:hover,
 .blog-list__title:active {
   text-decoration: underline;
-}
-
-.date {
-  display: block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #818181;
-  margin-bottom: 7px;
 }
 
 .catalog {

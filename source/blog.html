@@ -35,16 +35,16 @@
         <div class="container">
           <h1 class="title">Blog</h1>
           <nav class="breadcrumbs">
-            <ul class="breadcrumbs-list">
-              <li class="breadcrumbs-list__item">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
                 <a href="./index.html">Home</a>
               </li>
-              <li class="breadcrumbs-list__item">
+              <li class="breadcrumbs__item">
                 <a href="./blog.html">Blog</a>
               </li>
             </ul>
           </nav>
-          <ul class="blog-list">
+          <ul class="blog-list blog__list">
             <li class="blog-list__item">
               <img
                 src="../img/constructor.jpg"
@@ -53,7 +53,7 @@
                 width="380"
                 height="220"
               />
-              <span class="date">23rd August 2018</span>
+              <span class="blog-list__date">23rd August 2018</span>
               <a href="#"
                 ><h4 class="blog-list__title">
                   Top 5 fastest growing it service companies in philly
@@ -74,7 +74,7 @@
                 width="380"
                 height="220"
               />
-              <span class="date">23rd August 2018</span>
+              <span class="blog-list__date">23rd August 2018</span>
               <a href="#"><h4 class="blog-list__title">Best financial</h4></a>
               <p class="blog-list__info">
                 Direct Line Development is honored to be recognized as one of
@@ -90,7 +90,7 @@
                 width="380"
                 height="220"
               />
-              <span class="date">23rd August 2018</span>
+              <span class="blog-list__date">23rd August 2018</span>
               <a href="#"
                 ><h4 class="blog-list__title">
                   Company logo or brand identity: which one is more important?
@@ -111,7 +111,7 @@
                 width="380"
                 height="220"
               />
-              <span class="date">23rd August 2018</span>
+              <span class="blog-list__date">23rd August 2018</span>
               <a href="#"><h4 class="blog-list__title">Best financial</h4></a>
               <p class="blog-list__info">
                 Direct Line Development is honored to be recognized as one of
@@ -127,7 +127,7 @@
                 width="380"
                 height="220"
               />
-              <span class="date">23rd August 2018</span>
+              <span class="blog-list__date">23rd August 2018</span>
               <a href="#"
                 ><h4 class="blog-list__title">
                   Company logo or brand identity: which one is more important?
@@ -148,7 +148,7 @@
                 width="380"
                 height="220"
               />
-              <span class="date">23rd August 2018</span>
+              <span class="blog-list__date">23rd August 2018</span>
               <a href="#"
                 ><h4 class="blog-list__title">
                   Top 5 fastest growing it service companies in philly
@@ -162,30 +162,7 @@
               </p>
             </li>
           </ul>
-          <nav class="nav-list">
-            <button class="arrow">
-              <svg class="arrow__icon" width="18" height="30">
-                <title>Icon: Arrow Prev</title>
-                <use xlink:href="../img/sprite.svg#arrow_prev"></use>
-              </svg>
-            </button>
-            <ol class="pagination">
-              <li>
-                <a href="#" class="pagination__link pagination__link--active"
-                  >1</a
-                >
-              </li>
-              <li><a href="#" class="pagination__link">2</a></li>
-              <li><a href="#" class="pagination__link">3</a></li>
-              <li><a href="#" class="pagination__link">4</a></li>
-            </ol>
-            <button class="arrow">
-              <svg class="arrow__icon" width="18" height="30">
-                <title>Icon: Arrow Next</title>
-                <use xlink:href="../img/sprite.svg#arrow_next"></use>
-              </svg>
-            </button>
-          </nav>
+          @@include('blocks/pagination.html')
         </div>
       </section>
     </main>

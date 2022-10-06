@@ -143,32 +143,29 @@ fieldset {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  &--margin {
-    margin-bottom: 10px;
-  }
 }
 
 .breadcrumbs {
-  margin-top: 15px;
-  margin-bottom: 50px;
-  &-list {
+  padding-top: 15px;
+  padding-bottom: 50px;
+  &__list {
     display: flex;
-    &__item {
-      font-family: "Crimson Text", Arial, sans-serif;
-      font-style: italic;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 26px;
-      margin-right: 20px;
-    }
+  }
+  &__item {
+    font-family: "Crimson Text", Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-right: 20px;
   }
 }
 
-.breadcrumbs-list__item:nth-last-child(1) {
+.breadcrumbs__item:nth-last-child(1) {
   opacity: 0.5;
 }
 
-.breadcrumbs-list__item:not(:last-child)::after {
+.breadcrumbs__item:not(:last-child)::after {
   content: url("../img/small_arrow.svg");
   margin-left: 20px;
 }
@@ -177,30 +174,6 @@ fieldset {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.pagination {
-  display: flex;
-  justify-content: space-between;
-  width: 234px;
-  &__link {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    &--active {
-      color: $sand;
-    }
-  }
-}
-
-.pagination__link:hover {
-  color: #aaaaaa;
-}
-
-.dart {
-  fill: #1e0606;
 }
 
 .arrow {

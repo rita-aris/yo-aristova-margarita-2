@@ -73,46 +73,17 @@
       <section class="category">
         <div class="container">
           <h2 class="subtitle">Category Products</h2>
-          <ul class="category-list">
-            <li class="category-list__item">
-              <img
-                src="./img/apparel_kids.jpg"
-                alt="Image: Apparel Kids"
-                class="category-list__image"
-                width="280"
-                height="270"
-              /><a href="#"> <h4 class="groups">APPAREL KIDS</h4></a>
-            </li>
-            <li class="category-list__item">
-              <img
-                src="./img/holiday_shop.jpg"
-                alt="Image: Holiday Shop"
-                class="category-list__image"
-                width="280"
-                height="270"
-              />
-              <a href="#"> <h4 class="groups">HOLIDAY SHOP</h4></a>
-            </li>
-            <li class="category-list__item">
-              <img
-                src="./img/toys.jpg"
-                alt="Image: Toys"
-                class="category-list__image"
-                width="280"
-                height="270"
-              />
-              <a href="./toys.html"> <h4 class="groups">TOYS</h4></a>
-            </li>
-            <li class="category-list__item">
-              <img
-                src="./img/accessories.jpg"
-                alt="Image: Accessories"
-                class="category-list__image"
-                width="280"
-                height="270"
-              />
-              <a href="#"> <h4 class="groups">ACCESSORIES</h4></a>
-            </li>
+          <ul class="category-list category__list">
+            @@include('blocks/category-list.html', { "image":
+            "img/apparel_kids.jpg", "alt-text": "Image: Apparel Kids", "title":
+            "APPAREL KIDS", "link": "#" })
+            @@include('blocks/category-list.html', { "image":
+            "img/holiday_shop.jpg", "alt-text": "Image: Holiday Shop", "title":
+            "HOLIDAY SHOP", "link": "#"}) @@include('blocks/category-list.html',
+            { "image": "img/toys.jpg", "alt-text": "Image: Toys", "title":
+            "TOYS", "link": "toys.html"}) @@include('blocks/category-list.html',
+            { "image": "img/accessories.jpg", "alt-text": "Image: Accessories",
+            "title": "ACCESSORIES", "link": "#" })
           </ul>
           <div class="arrows-wrapper">
             <div class="arrows">

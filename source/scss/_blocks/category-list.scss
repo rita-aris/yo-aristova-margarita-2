@@ -1,0 +1,12 @@
+.category-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__item {
+    position: relative;
+  }
+  &__image {
+    width: 280px;
+    height: 270px;
+  }
+}

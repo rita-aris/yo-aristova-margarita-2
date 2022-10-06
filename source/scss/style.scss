@@ -279,27 +279,19 @@
 }
 
 .catalog {
-  margin: 60px 0 50px 0;
-  &-list {
-    display: flex;
-    flex-wrap: wrap;
+  padding: 60px 0 50px 0;
+  &__list {
+    justify-content: flex-start;
     column-gap: 20px;
-    &-wrapper {
-      display: flex;
-      flex-direction: column;
-      row-gap: 23px;
-      max-width: 1080px;
-    }
-    &__item {
-      position: relative;
-    }
-    &__image {
-      width: 280px;
-      height: 270px;
-    }
     &--end {
       justify-content: flex-end;
     }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+    max-width: 1080px;
   }
 }
 

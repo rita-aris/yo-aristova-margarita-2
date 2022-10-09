@@ -70,11 +70,13 @@
 .footer__link:hover,
 .social-list__icon:hover {
   opacity: 0.5;
+  transition-duration: 0.4s;
 }
 
 .footer__link:active,
 .social-list__icon:active {
   opacity: 0.2;
+  transition-duration: 0.4s;
 }
 
 .footer__input:hover,
@@ -181,4 +183,5 @@
 .footer__company:active {
   color: $primary;
   text-decoration: underline;
+  transition-duration: 0.4s;
 }

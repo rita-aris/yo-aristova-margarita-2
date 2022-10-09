@@ -35,14 +35,17 @@
 
 .pagination__link:hover {
   color: #aaaaaa;
+  transition-duration: 0.4s;
 }
 
 .pagination__icon:hover {
   stroke: $sand;
   opacity: 1;
+  transition-duration: 0.4s;
 }
 
 .pagination__icon:active {
   stroke: $sand;
   opacity: 0.7;
+  transition-duration: 0.4s;
 }

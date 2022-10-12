@@ -589,5 +589,13 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
 .close-button__icon:active {
   opacity: 0.7;
   transition-duration: 0.4s;
-  transform: scale(1.5, 1.5);
+}
+
+.svg {
+  padding: 60px 0 36px 0;
+  &__image {
+    width: 458px;
+    height: 391px;
+    margin-left: -20px;
+  }
 }

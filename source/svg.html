@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>Svg animation</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet" />
+    <!-- endbuild -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    @@include('blocks/header.html', {"class": "header--small"})
+    <main>
+      <section class="svg">
+        <div class="container">
+          <h1 class="title">SVG animation</h1>
+          <nav class="breadcrumbs breadcrumbs--small">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="./svg.html">SVG</a>
+              </li>
+            </ul>
+          </nav>
+          <svg class="svg__image">
+            <title>Image: SVG</title>
+            <use xlink:href="./img/sprite.svg#svg"></use>
+          </svg>
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+    <section class="popup">
+      <h1 class="hidden">EXPLORE NOW</h1>
+      <!-- Синяя подложка -->
+      <div class="popup__overlay"></div>
+      <!-- -->
+      <div class="popup__dialog">
+        <button class="close-button popup__close">
+          <svg class="close-button__icon" width="25" height="25">
+            <title>Icon: Close Button</title>
+            <use xlink:href="./img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        @@include('blocks/form.html')
+      </div>
+    </section>
+
+    <script src="js/app.js" defer></script>
+    <script src="js/index.js" defer></script>
+  </body>
+</html>

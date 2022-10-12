@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>Animation scene</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet" />
+    <!-- endbuild -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    @@include('blocks/header.html', {"class": "header--small"})
+    <main>
+      <section class="scene">
+        <div class="container">
+          <h1 class="title">Animation scene</h1>
+          <nav class="breadcrumbs breadcrumbs--small">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="./scene.html">Animation</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="scene__wrapper">
+          <img
+            src="./img/sky.png"
+            alt="Image: Clouds and sun"
+            class="scene__sky"
+          />
+          <img src="./img/city.png" alt="Image: City" class="scene__city" />
+          <img
+            src="./img/lanterns.png"
+            alt="Image: Lanterns"
+            class="scene__lanterns-1"
+          />
+          <img
+            src="./img/lanterns.png"
+            alt="Image: Lanterns"
+            class="scene__lanterns-2"
+          />
+          <img
+            src="./img/lantern.png"
+            alt="Image: Lantern"
+            class="scene__lantern"
+          />
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+
+    <script src="js/app.js" defer></script>
+    <script src="js/index.js" defer></script>
+  </body>
+</html>

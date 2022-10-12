@@ -159,6 +159,10 @@ fieldset {
     line-height: 26px;
     margin-right: 20px;
   }
+  &--small {
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
 }
 
 .breadcrumbs__item:nth-last-child(1) {

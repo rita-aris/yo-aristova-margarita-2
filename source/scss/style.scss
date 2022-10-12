@@ -591,11 +591,45 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
   transition-duration: 0.4s;
 }
 
+@keyframes shake1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30px);
+  }
+}
+
+@keyframes dance {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
 .svg {
   padding: 60px 0 36px 0;
   &__image {
-    width: 458px;
-    height: 391px;
     margin-left: -20px;
+  }
+  &__blue {
+    animation: shake1 0.5s ease infinite alternate;
+  }
+  &__grey {
+    animation: shake2 0.5s ease infinite alternate;
+  }
+  &__sun {
+    animation: dance 3s linear infinite alternate;
   }
 }

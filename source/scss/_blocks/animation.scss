@@ -1,0 +1,43 @@
+.scene {
+  padding: 60px 0 70px 0;
+  &__wrapper {
+    position: relative;
+  }
+  &__city,
+  &__sky {
+    width: 100%;
+  }
+  &__lantern {
+    position: absolute;
+    top: 340px;
+    right: 300px;
+  }
+  &__lanterns-1 {
+    position: absolute;
+    top: 320px;
+    left: 676px;
+  }
+  &__lanterns-2 {
+    position: absolute;
+    top: 320px;
+    right: 30px;
+  }
+  &__woman,
+  &__suitcases {
+    position: absolute;
+    bottom: 45px;
+    left: 290px;
+    z-index: 2;
+  }
+  &__man {
+    position: absolute;
+    bottom: 45px;
+    left: 450px;
+  }
+  &__hand {
+    position: absolute;
+    bottom: 200px;
+    left: 435px;
+    transform: rotate(180deg);
+  }
+}

@@ -21,6 +21,7 @@
 @import "_blocks/category-list";
 @import "_blocks/form";
 @import "_blocks/pagination";
+@import "_blocks/animation";
 @import "_blocks/footer";
 
 /*
@@ -631,31 +632,5 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
   }
   &__sun {
     animation: dance 3s linear infinite alternate;
-  }
-}
-
-.scene {
-  padding: 60px 0 70px 0;
-  &__wrapper {
-    position: relative;
-  }
-  &__city,
-  &__sky {
-    width: 100%;
-  }
-  &__lantern {
-    position: absolute;
-    top: 340px;
-    right: 300px;
-  }
-  &__lanterns-1 {
-    position: absolute;
-    top: 320px;
-    left: 676px;
-  }
-  &__lanterns-2 {
-    position: absolute;
-    top: 320px;
-    right: 30px;
   }
 }

@@ -6,4 +6,16 @@
     display: flex;
     flex-direction: column;
   }
+  @media screen and (max-width: 1200px) {
+    max-width: 920px;
+  }
+  @media screen and (max-width: 992px) {
+    max-width: 648px;
+  }
+  @media screen and (max-width: 684px) {
+    max-width: 480px;
+  }
+  @media screen and (max-width: 480px) {
+    max-width: 335px;
+  }
 }

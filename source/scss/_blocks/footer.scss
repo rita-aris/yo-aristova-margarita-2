@@ -202,7 +202,7 @@
   .footer {
     padding: 80px 0;
     &__section {
-      width: 203px;
+      width: 30%;
     }
     &__copyright,
     &__company {
@@ -210,7 +210,7 @@
     }
   }
   .connect__input {
-    max-width: 142px;
+    max-width: 120px;
   }
 }
 
@@ -221,11 +221,16 @@
       flex-wrap: wrap;
       row-gap: 40px;
     }
-    &__section {
+    &__bottom &__section {
       width: 50%;
     }
-    &__bottom {
-      flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .footer {
+    &__section {
+      width: 50%;
     }
     &__bottom &__section {
       width: 100%;
@@ -251,6 +256,9 @@
     &__link {
       font-size: 14px;
       line-height: 19px;
+    }
+    &__bottom {
+      flex-direction: column;
     }
   }
 }

@@ -46,7 +46,7 @@
 }
 
 .main {
-  padding-top: 129px;
+  padding: 129px 0 90px 0;
   &__background {
     display: flex;
     column-gap: 44px;
@@ -130,6 +130,40 @@
 .control__line:hover {
   background-color: rgba(30, 6, 6, 0.6);
   transition-duration: 0.4s;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    padding-top: 35px;
+    &__banner {
+      top: 97px;
+      width: 385px;
+      height: 286px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main__banner {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    &__background {
+      column-gap: 11px;
+    }
+    &__count {
+      margin-left: 0;
+    }
+  }
+  .count {
+    font-size: 48px;
+  }
+  .control {
+    width: 27px;
+  }
 }
 
 .category {

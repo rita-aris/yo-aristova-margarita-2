@@ -41,10 +41,6 @@
   то он должен был бы быть в файле _blocks/coming-soon.scss
 */
 
-.mb {
-  margin-bottom: 90px;
-}
-
 .main {
   padding: 129px 0 90px 0;
   &__background {
@@ -272,8 +268,10 @@
 }
 
 .delivery {
+  padding-bottom: 90px;
   &__wrapper {
     display: flex;
+    align-items: center;
     column-gap: 60px;
   }
   &__image {
@@ -310,10 +308,39 @@
   margin-left: 60px;
 }
 
-.awards-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (max-width: 992px) {
+  .delivery {
+    &__wrapper {
+      column-gap: 36px;
+    }
+    &__image {
+      width: 358px;
+      height: 512px;
+    }
+    &__list {
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 31px;
+    }
+    &__title--checked {
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
+  }
+  .shift {
+    margin-left: 20px;
+  }
+}
+
+.awards {
+  padding-bottom: 90px;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .about-wrapper {

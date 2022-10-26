@@ -98,9 +98,6 @@
   font-size: 60px;
   line-height: 73px;
   color: rgba(30, 6, 6, 0.05);
-  &-wrapper {
-    margin: 17px 0 10px 28px;
-  }
 }
 
 .control {
@@ -163,6 +160,61 @@
   }
   .control {
     width: 27px;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .main {
+    &__banner {
+      top: 150px;
+      right: 0;
+      width: 292px;
+      height: 226px;
+    }
+    &__title {
+      font-size: 36px;
+    }
+    &__designed {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    &__background {
+      justify-content: space-between;
+      padding: 0 20px 0 20px;
+    }
+    &__info {
+      margin-top: 80px;
+      margin-bottom: 188px;
+    }
+    &__count {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      order: 1;
+    }
+    &__control {
+      margin: 0;
+    }
+    &__banner {
+      top: 222px;
+    }
+    &__offer {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .control {
+    display: inline-flex;
+  }
+  .count {
+    display: block;
+    height: 59px;
+    margin-bottom: 7px;
   }
 }
 

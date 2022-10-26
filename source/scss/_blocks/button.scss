@@ -11,6 +11,11 @@
   max-width: max-content;
   padding: 9px 22px;
   cursor: pointer;
+  @media screen and (max-width: 676px) {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 8px 20px;
+  }
 }
 
 .button:hover {

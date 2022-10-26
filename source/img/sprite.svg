@@ -1,8 +1,8 @@
 <svg display="none" xmlns="http://www.w3.org/2000/svg">
-  <symbol id="arrow_prev" width="18" height="30" viewBox="0 0 18 30" fill="none">
+  <symbol id="arrow_prev"  viewBox="0 0 18 30" fill="none">
     <path d="M16 2L3 15L16 28" stroke-width="4"/>
   </symbol>
-  <symbol id="arrow_next" width="18" height="30" viewBox="0 0 18 30" fill="none">
+  <symbol id="arrow_next" viewBox="0 0 18 30" fill="none">
     <path d="M2 2L15 15L2 28" stroke-width="4"/>
   </symbol>
   <symbol id="logo" viewBox="0 0 100 52" fill="none">

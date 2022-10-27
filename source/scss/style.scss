@@ -83,8 +83,6 @@
     position: absolute;
     top: -89px;
     right: 100px;
-    width: 636px;
-    height: 490px;
   }
 }
 
@@ -130,8 +128,6 @@
     padding-top: 35px;
     &__banner {
       top: 97px;
-      width: 385px;
-      height: 286px;
     }
   }
 }
@@ -167,10 +163,8 @@
       margin-bottom: 188px;
     }
     &__banner {
-      top: 222px;
+      top: 220px;
       right: 0;
-      width: 292px;
-      height: 226px;
     }
     &__title {
       font-size: 36px;
@@ -359,6 +353,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    @media screen and (max-width: 676px) {
+      column-gap: 25%;
+      row-gap: 36px;
+    }
+    @media screen and (max-width: 480px) {
+      column-gap: 10%;
+    }
   }
 }
 

@@ -1,9 +1,19 @@
 <li class="category-list__item">
-  <img
-    src="@@image"
-    alt="@@alt-text"
-    class="category-list__image"
-    width="280"
-    height="270"
-  /><a href="@@link"> <h4 class="groups">@@title</h4></a>
+  <picture>
+    <source
+      srcset="@@set"
+      width="247"
+      height="238"
+      media="(max-width: 676px)"
+    />
+    <source
+      srcset="@@set"
+      media="(max-width: 768px)"
+      width="258"
+      height="249"
+    />
+    <source srcset="@@set" width="280" height="270" />
+    <img srcset="@@image" alt="@@alt-text" width="280" height="270" />
+  </picture>
+  <a href="@@link"> <h4 class="groups">@@title</h4></a>
 </li>

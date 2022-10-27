@@ -368,16 +368,33 @@
   min-height: 359px;
   padding-top: 25px;
   padding-bottom: 60px;
+  @media screen and (max-width: 992px) {
+    column-gap: 20px;
+  }
+  @media screen and (max-width: 676px) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    column-gap: 0;
+  }
 }
 
 .design {
+  flex-basis: 50%;
   @include make-box(27px);
   &__info {
     margin-bottom: 10px;
   }
+  &__title {
+    @media screen and (max-width: 480px) {
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
 }
 
 .contact {
+  flex-basis: 50%;
   &__info {
     @include make-box(102px);
   }
@@ -386,6 +403,19 @@
     top: -80px;
     left: 30px;
     margin-bottom: -80px;
+    @media screen and (max-width: 1200px) {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 400px;
+    }
+    @media screen and (max-width: 992px) {
+      width: 284px;
+      height: 151px;
+    }
+    @media screen and (max-width: 676px) {
+      width: 335px;
+      height: 196px;
+    }
   }
 }
 

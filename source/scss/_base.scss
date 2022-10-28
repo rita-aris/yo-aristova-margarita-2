@@ -211,3 +211,30 @@ fieldset {
   content: url("../img/small_arrow.svg");
   margin-left: 20px;
 }
+
+.category-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__item {
+    position: relative;
+  }
+}
+
+.category__item {
+  @media screen and (max-width: 1200px) {
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 676px) {
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}

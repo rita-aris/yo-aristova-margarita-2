@@ -144,7 +144,19 @@
       column-gap: 11px;
     }
     &__count {
+      margin-top: 12px;
       margin-left: 0;
+    }
+    &__control {
+      margin: 0;
+    }
+    &__info {
+      row-gap: 17px;
+      margin-top: 80px;
+      margin-bottom: 105px;
+    }
+    &__banner {
+      top: 87px;
     }
   }
   .count {
@@ -158,11 +170,10 @@
 @media screen and (max-width: 676px) {
   .main {
     &__info {
-      margin-top: 80px;
       margin-bottom: 188px;
     }
     &__banner {
-      top: 220px;
+      top: 222px;
       right: 0;
     }
     &__title {
@@ -177,20 +188,21 @@
 
 @media screen and (max-width: 480px) {
   .main {
+    padding-top: 25px;
     padding-bottom: 80px;
     &__background {
       justify-content: space-between;
       padding: 0 20px 0 20px;
     }
 
+    &__banner {
+      top: 215px;
+    }
     &__count {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       order: 1;
-    }
-    &__control {
-      margin: 0;
     }
     &__offer {
       padding-left: 20px;
@@ -203,7 +215,7 @@
   .count {
     display: block;
     height: 59px;
-    margin-bottom: 7px;
+    margin-bottom: 15px;
   }
 }
 
@@ -217,9 +229,6 @@
     align-items: center;
     column-gap: 20px;
     max-width: 680px;
-    @media screen and (max-width: 480px) {
-      column-gap: 16px;
-    }
   }
 }
 
@@ -249,6 +258,7 @@
 
 @media screen and (max-width: 768px) {
   .category {
+    padding-bottom: 58px;
     &__list {
       margin: 24px 0 27px 0;
     }
@@ -270,8 +280,13 @@
 
 @media screen and (max-width: 480px) {
   .category {
+    padding-bottom: 77px;
     &__list {
       margin: 20px 0 20px 0;
+    }
+    &__arrows {
+      align-items: flex-start;
+      column-gap: 16px;
     }
   }
 }
@@ -353,6 +368,7 @@
 
 @media screen and (max-width: 992px) {
   .delivery {
+    padding-bottom: 40px;
     &__wrapper {
       column-gap: 56px;
     }
@@ -362,6 +378,9 @@
     }
     &__list {
       row-gap: 13px;
+      margin-bottom: 20px;
+    }
+    &__text {
       margin-bottom: 20px;
     }
     &__title {
@@ -393,8 +412,20 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .delivery {
+    padding-bottom: 80px;
+    &__text {
+      margin-bottom: 5px;
+    }
+  }
+}
+
 .awards {
   padding-bottom: 90px;
+  @media screen and (max-width: 992px) {
+    padding-bottom: 74px;
+  }
   &-list {
     display: flex;
     justify-content: space-between;
@@ -406,6 +437,26 @@
     }
     @media screen and (max-width: 480px) {
       column-gap: 10%;
+      row-gap: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .awards {
+    padding-bottom: 68px;
+    &__eltex {
+      order: 1;
+    }
+
+    &__mail {
+      order: 3;
+    }
+    &__apple {
+      order: 2;
+    }
+    &__owox {
+      order: 4;
     }
   }
 }
@@ -418,6 +469,7 @@
   padding-bottom: 57px;
   @media screen and (max-width: 992px) {
     column-gap: 20px;
+    padding-bottom: 80px;
   }
   @media screen and (max-width: 676px) {
     flex-direction: column;
@@ -443,7 +495,7 @@
 
 .contact {
   flex-basis: 50%;
-  &__info {
+  &__block {
     @include make-box(102px);
   }
   &__map {
@@ -451,18 +503,59 @@
     top: -80px;
     left: 30px;
     margin-bottom: -80px;
-    @media screen and (max-width: 1200px) {
-      left: 50%;
-      transform: translateX(-50%);
-      width: 400px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .contact__map {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .design {
+    padding: 0 15px 36px 15px;
+    row-gap: 15px;
+    &__info {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 20px;
     }
-    @media screen and (max-width: 992px) {
+  }
+  .contact {
+    &__block {
+      row-gap: 25px;
+      padding-left: 15px;
+      padding-bottom: 120px;
+    }
+    &__map {
       width: 284px;
       height: 151px;
     }
-    @media screen and (max-width: 676px) {
-      width: 335px;
-      height: 196px;
+    &__info {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .contact__map {
+    width: 335px;
+    height: 196px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .design {
+    row-gap: 10px;
+    padding-bottom: 25px;
+    &__info {
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 5px;
     }
   }
 }

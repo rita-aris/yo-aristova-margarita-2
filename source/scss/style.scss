@@ -477,6 +477,9 @@
     row-gap: 50px;
     column-gap: 0;
   }
+  @media screen and (max-width: 480px) {
+    padding-bottom: 50px;
+  }
 }
 
 .design {
@@ -556,6 +559,17 @@
       font-size: 14px;
       line-height: 19px;
       margin-bottom: 5px;
+    }
+  }
+  .contact {
+    &__block {
+      row-gap: 15px;
+      padding-bottom: 110px;
+      margin-bottom: -20px;
+    }
+    &__info {
+      font-size: 14px;
+      line-height: 19px;
     }
   }
 }

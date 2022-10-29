@@ -220,21 +220,3 @@ fieldset {
     position: relative;
   }
 }
-
-.category__item {
-  @media screen and (max-width: 1200px) {
-    &:nth-child(4) {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 992px) {
-    &:nth-child(3) {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 676px) {
-    &:nth-child(2) {
-      display: none;
-    }
-  }
-}

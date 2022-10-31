@@ -6,6 +6,9 @@
     display: flex;
     justify-content: space-between;
     width: 234px;
+    @media screen and (max-width: 480px) {
+      width: 188px;
+    }
   }
   &__button {
     width: 30px;
@@ -20,12 +23,20 @@
     height: 30px;
     stroke: $secondary;
     opacity: 0.12;
+    @media screen and (max-width: 676px) {
+      width: 12px;
+      height: 24px;
+    }
   }
   &__link {
     font-family: "Montserrat", Arial, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    @media screen and (max-width: 676px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
     text-transform: uppercase;
     &--active {
       color: $sand;

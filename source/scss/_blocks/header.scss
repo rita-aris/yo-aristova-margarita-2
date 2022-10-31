@@ -106,3 +106,10 @@
     height: 17px;
   }
 }
+
+.header-menu {
+  display: none;
+  &--visible {
+    display: block;
+  }
+}

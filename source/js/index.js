@@ -1,7 +1,7 @@
 var popupButton = document.querySelector(".popup-button");
 var popup = document.querySelector(".popup");
 var input = document.querySelector(".form__input");
-var closeButton = document.querySelector(".close-button");
+var closeButton = document.querySelector(".popup__close");
 var overlay = document.querySelector(".popup__overlay");
 
 popupButton.addEventListener("click", function () {

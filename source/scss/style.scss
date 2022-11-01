@@ -1102,10 +1102,9 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
     right: -35px;
   }
 }
-
 .close-button {
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -1113,6 +1112,8 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
   &__icon {
     width: inherit;
     height: inherit;
+    fill: $primary;
+    stroke: $primary;
   }
 }
 

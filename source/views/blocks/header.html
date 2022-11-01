@@ -45,20 +45,28 @@
   </div>
 </header>
 
-<header class="header header-menu">
-  <div class="container">
-    <div class="header__wrapper">
-      <a href="./index.html" class="logo">
-        <svg class="logo__image">
-          <title>Icon: Logo</title>
-          <use xlink:href="./img/sprite.svg#logo"></use>
-        </svg>
-      </a>
-      <div class="links-wrapper">
-        <nav class="header__nav header__nav--mobile">
-          <a href="#" class="header__link menu-button">Menu</a>
-        </nav>
-        <!-- <nav>
+<header class="header-menu">
+  <div class="header-menu__overlay"></div>
+  <div class="header-menu__dialog">
+    <div class="container">
+      <div class="header-menu__wrapper">
+        <a href="./index.html" class="logo">
+          <svg class="logo__image">
+            <title>Icon: Logo</title>
+            <use xlink:href="./img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <button class="close-button header-menu__close">
+          <svg class="close-button__icon" width="25" height="25">
+            <title>Icon: Close Button</title>
+            <use xlink:href="./img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="links-wrapper">
+          <nav class="header__nav header__nav--mobile">
+            <a href="#" class="header__link menu-button">Menu</a>
+          </nav>
+          <!-- <nav>
           <ul class="header__nav">
             <li>
               <a href="../../catalog.html" class="header__link">Catalog</a>
@@ -80,13 +88,14 @@
             </li>
           </ul>
         </nav> -->
-      </div>
-      <div class="search">
-        <svg class="search__icon" width="24" height="24">
-          <title>Icon: Search</title>
-          <use xlink:href="./img/sprite.svg#search"></use>
-        </svg>
-        <a href="../../contacts.html" class="search__contact">Contact Us</a>
+        </div>
+        <div class="search">
+          <svg class="search__icon" width="24" height="24">
+            <title>Icon: Search</title>
+            <use xlink:href="./img/sprite.svg#search"></use>
+          </svg>
+          <a href="../../contacts.html" class="search__contact">Contact Us</a>
+        </div>
       </div>
     </div>
   </div>

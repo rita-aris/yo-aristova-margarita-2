@@ -1099,23 +1099,10 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
   &__close {
     position: absolute;
     top: 0;
-    right: -35px;
+    right: -30px;
   }
 }
-.close-button {
-  width: 15px;
-  height: 15px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  &__icon {
-    width: inherit;
-    height: inherit;
-    fill: $primary;
-    stroke: $primary;
-  }
-}
+
 
 .close-button__icon:hover,
 .close-button__icon:active {

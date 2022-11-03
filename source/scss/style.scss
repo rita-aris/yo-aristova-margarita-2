@@ -1040,6 +1040,9 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
     &__wrapper {
       margin-right: 0;
     }
+    &__button {
+      margin-top: 34px;
+    }
   }
 }
 
@@ -1056,18 +1059,17 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
   .filter-form {
     justify-content: flex-start;
     &__cost {
-      margin-right: 75px;
+      margin-right: 87px;
     }
     &__wrapper {
-      column-gap: 92px;
+      column-gap: 100px;
     }
     &__amount {
-      margin-right: 195px;
+      margin-right: 208px;
     }
   }
   .product-list {
-    align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     &__item::before {
       display: none;
     }
@@ -1089,11 +1091,14 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
       margin-top: 5px;
     }
   }
+  .color-list {
+    row-gap: 18px;
+  }
 }
 
 @media screen and (max-width: 676px) {
   .toys {
-    padding: 46px 0 50px 0;
+    padding: 42px 0 53px 0;
   }
 
   .filter {
@@ -1101,7 +1106,7 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
   }
   .filter-form {
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: 18px;
     &__cost {
       flex-basis: 100%;
       margin-right: 0;
@@ -1115,7 +1120,7 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
     }
     &__button {
       align-self: center;
-      margin-top: 0;
+      margin-top: 10px;
     }
   }
   .headline {
@@ -1129,9 +1134,20 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
     &__item {
       flex-basis: 50%;
     }
+    &__image {
+      margin-bottom: 0;
+    }
     &__title {
       max-width: 160px;
+      min-height: 33px;
     }
+    &__price {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  .color-list {
+    row-gap: 12px;
   }
 }
 
@@ -1160,7 +1176,7 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
       max-width: 648px;
     }
     @media screen and (max-width: 676px) {
-      max-width: 70%;
+      max-width: 400px;
     }
     @media screen and (max-width: 480px) {
       max-width: 90%;

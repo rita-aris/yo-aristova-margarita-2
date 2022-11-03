@@ -587,11 +587,6 @@
     &__item {
       max-width: 380px;
     }
-    &__image {
-      width: 380px;
-      height: 220px;
-      margin-bottom: 20px;
-    }
     &__title {
       font-family: "Montserrat", Arial, sans-serif;
       font-weight: 700;
@@ -610,7 +605,7 @@
       font-size: 16px;
       line-height: 22px;
       color: #818181;
-      margin-bottom: 7px;
+      margin: 20px 0 10px 0;
     }
   }
 }
@@ -618,6 +613,56 @@
 .blog-list__title:hover,
 .blog-list__title:active {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+  .blog-list {
+    &__item {
+      max-width: 315px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog {
+    padding: 70px 0 50px 0;
+  }
+  .blog-list {
+    row-gap: 30px;
+    &__date {
+      margin: 15px 0 5px 0;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .blog {
+    padding-top: 46px;
+  }
+  .blog-list {
+    justify-content: center;
+    row-gap: 25px;
+    &__item {
+      max-width: 100%;
+    }
+    &__date {
+      font-size: 14px;
+      line-height: 16px;
+      margin: 10px 0 4px 0;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 18px;
+      margin-bottom: 7px;
+    }
+    &__info {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
 }
 
 .catalog {
@@ -1102,7 +1147,6 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
     right: -30px;
   }
 }
-
 
 .close-button__icon:hover,
 .close-button__icon:active {

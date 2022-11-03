@@ -1185,6 +1185,10 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
   padding: 60px 0 36px 0;
   &__image {
     margin-left: -20px;
+    @media screen and (max-width: 676px) {
+      width: 360px;
+      height: 300px;
+    }
   }
   &__blue {
     animation: shake1 0.5s ease infinite alternate;

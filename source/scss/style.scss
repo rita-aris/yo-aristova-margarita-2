@@ -630,7 +630,7 @@
   .blog-list {
     row-gap: 30px;
     &__date {
-      margin: 15px 0 5px 0;
+      margin: 10px 0 5px 0;
     }
     &__title {
       margin-bottom: 10px;
@@ -641,26 +641,30 @@
 @media screen and (max-width: 676px) {
   .blog {
     padding-top: 46px;
+    &__list {
+      margin-bottom: 30px;
+    }
   }
   .blog-list {
     justify-content: center;
-    row-gap: 25px;
+    row-gap: 27px;
     &__item {
       max-width: 100%;
     }
     &__date {
       font-size: 14px;
       line-height: 16px;
-      margin: 10px 0 4px 0;
+      margin: 4px 0;
     }
     &__title {
-      font-size: 22px;
-      line-height: 18px;
+      font-size: 18px;
+      line-height: 22px;
       margin-bottom: 7px;
     }
     &__info {
       font-size: 16px;
       line-height: 22px;
+      letter-spacing: 0.2px;
     }
   }
 }

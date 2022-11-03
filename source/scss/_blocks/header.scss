@@ -80,7 +80,9 @@
   }
   .header__link {
     &--shift {
-      margin-left: 70px;
+      font-size: 16px;
+      line-height: 22px;
+      margin-left: 35px;
     }
   }
   .search__contact {
@@ -88,14 +90,18 @@
     &--mobile {
       display: block;
       z-index: 10;
-      font-size: 14px;
-      line-height: 19px;
+      font-size: 16px;
+      line-height: 22px;
       font-weight: 700;
       text-transform: uppercase;
       padding-top: 35px;
-      padding-left: 70px;
+      padding-left: 35px;
       margin: auto;
     }
+  }
+  .logo {
+    width: 62px;
+    height: 32px;
   }
 }
 
@@ -106,10 +112,7 @@
       margin-left: 40px;
     }
   }
-  .logo {
-    width: 62px;
-    height: 32px;
-  }
+
   .search__contact {
     &--mobile {
       padding-left: 40px;
@@ -149,7 +152,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     @media screen and (max-width: 480px) {
       padding-left: 10px;
       padding-right: 15px;

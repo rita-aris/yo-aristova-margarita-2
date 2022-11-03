@@ -60,7 +60,7 @@ fieldset {
 .checkbox + label::before {
   content: "";
   display: inline-block;
-  width: 19px;
+  min-width: 19px;
   height: 19px;
   background-image: url("../img/checkbox_off.svg");
   margin-right: 15px;

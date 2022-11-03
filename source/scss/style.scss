@@ -1144,7 +1144,10 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
       max-width: 648px;
     }
     @media screen and (max-width: 676px) {
-      max-width: 80%;
+      max-width: 70%;
+    }
+    @media screen and (max-width: 480px) {
+      max-width: 90%;
     }
   }
   &__close {

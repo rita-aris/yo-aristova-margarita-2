@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>DLK</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className =
+        docElement.className.replace(/\bno-js\b/, "") + " js";
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet" />
+    <!-- endbuild -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    @@include('blocks/header.html', {"class": ""})
+    <main>
+      <section class="grid">
+        <div class="container">
+          <h1 class="title">Grid</h1>
+          <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="./catalog.html">Grid</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="grid__wrapper">
+          <div class="grid__block-1 iphone">
+            <div class="iphone__info">
+              <span class="small-lato">Iphone 6S </span>
+              <h4 class="iphone__title">
+                3D Touch. 12MP photos. 4K video. One powerful phone
+              </h4>
+              <span class="iphone__more"
+                >Learn more or visit an Apple Store today</span
+              >
+            </div>
+            <picture>
+              <source
+                srcset="./img/iphone.png, ./img/iphone-2x.png 2x"
+                width="250"
+                height="345"
+              />
+              <img
+                srcset="./img/iphone.png"
+                alt="Image: Iphone"
+                width="250"
+                height="345"
+              />
+            </picture>
+          </div>
+          <div class="grid__block-2 rotary">
+            <span class="small-lato">LEARN MORE</span>
+            <h3 class="rotary__title">
+              How to Use Rotary Evaporator in Chemical Labs
+            </h3>
+            <a href="#" class="rotary__download">Download now</a>
+          </div>
+          <div class="grid__block-3 keyboard">
+            <picture>
+              <source
+                srcset="./img/keyboard.png, ./img/keyboard-2x.png 2x"
+                width="314"
+                height="164"
+              />
+              <img
+                srcset="./img/keyboard.png"
+                alt="Image: Keyboard"
+                width="314"
+                height="164"
+              />
+            </picture>
+            <h4 class="keyboard__title">Our Brand New Keyboard</h4>
+            <a href="#" class="keyboard__learn">LEARN ›</a>
+          </div>
+          <div class="grid__block-4 retina">
+            <div class="retina__main">
+              <span class="small-lato">IMAC.RETINA</span>
+              <h4 class="retina__title">
+                Hardly a month passes these days where
+              </h4>
+              <picture>
+                <source
+                  srcset="./img/imac.png, ./img/imac-2x.png 2x"
+                  width="100%"
+                  height="164"
+                />
+                <img
+                  srcset="./img/imac.png"
+                  alt="Image: Keyboard"
+                  width="100%"
+                  height="164"
+                />
+              </picture>
+            </div>
+            <div class="retina__info">
+              <p class="retina__text">
+                Apple may be experimenting in the virtual reality space. The
+                company has been granted a patent for a head-mounted virtual
+                reality device that would use the iPhone screen as the display.
+              </p>
+              <a href="#" class="retina__download">DOWNLOAD NOW ›</a>
+            </div>
+          </div>
+          <div class="grid__block-5"></div>
+          <div class="grid__block-6"></div>
+          <div class="grid__block-7"></div>
+          <div class="grid__block-8"></div>
+          <div class="grid__block-9"></div>
+        </div>
+      </section>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

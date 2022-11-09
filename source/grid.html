@@ -48,8 +48,8 @@
         <div class="grid__wrapper">
           <div class="grid__block-1 iphone">
             <div class="iphone__info">
-              <span class="small-lato">Iphone 6S </span>
-              <h4 class="iphone__title">
+              <span class="grid__subtitle">Iphone 6S </span>
+              <h4 class="grid__title iphone__title">
                 3D Touch. 12MP photos. 4K video. One powerful phone
               </h4>
               <span class="iphone__more"
@@ -70,14 +70,14 @@
               />
             </picture>
           </div>
-          <div class="grid__block-2 rotary">
-            <span class="small-lato">LEARN MORE</span>
-            <h3 class="rotary__title">
+          <div class="grid__block-2 column rotary">
+            <span class="grid__subtitle">LEARN MORE</span>
+            <h4 class="rotary__title">
               How to Use Rotary Evaporator in Chemical Labs
-            </h3>
+            </h4>
             <a href="#" class="rotary__download">Download now</a>
           </div>
-          <div class="grid__block-3 keyboard">
+          <div class="grid__block-3 column keyboard">
             <picture>
               <source
                 srcset="./img/keyboard.png, ./img/keyboard-2x.png 2x"
@@ -91,13 +91,17 @@
                 height="164"
               />
             </picture>
-            <h4 class="keyboard__title">Our Brand New Keyboard</h4>
-            <a href="#" class="keyboard__learn">LEARN ›</a>
+            <h4
+              class="grid__title grid__title--light grid__title--bold grid__title--margin"
+            >
+              Our Brand New Keyboard
+            </h4>
+            <a href="#" class="grid__link grid__link--yellow">LEARN ›</a>
           </div>
           <div class="grid__block-4 retina">
             <div class="retina__main">
-              <span class="small-lato">IMAC.RETINA</span>
-              <h4 class="retina__title">
+              <span class="grid__subtitle retina__subtitle">IMAC.RETINA</span>
+              <h4 class="grid__title retina__title">
                 Hardly a month passes these days where
               </h4>
               <picture>
@@ -115,19 +119,122 @@
               </picture>
             </div>
             <div class="retina__info">
-              <p class="retina__text">
+              <p class="grid__text retina__text">
                 Apple may be experimenting in the virtual reality space. The
                 company has been granted a patent for a head-mounted virtual
                 reality device that would use the iPhone screen as the display.
               </p>
-              <a href="#" class="retina__download">DOWNLOAD NOW ›</a>
+              <a href="#" class="grid__link">DOWNLOAD NOW ›</a>
             </div>
           </div>
-          <div class="grid__block-5"></div>
-          <div class="grid__block-6"></div>
-          <div class="grid__block-7"></div>
-          <div class="grid__block-8"></div>
-          <div class="grid__block-9"></div>
+          <div class="grid__block-5 column icloud">
+            <picture>
+              <source
+                srcset="./img/disk.png, ./img/disk-2x.png 2x"
+                width="180"
+                height="186"
+              />
+              <img
+                srcset="./img/disk.png"
+                alt="Image: Diskette"
+                width="180"
+                height="186"
+              />
+            </picture>
+            <h4 class="icloud__title">iCloud</h4>
+            <p class="grid__text grid__text--light icloud__text">
+              With iCloud, you always have the latest versions of your most
+              important things — like documents, apps, notes, and contacts — on
+              whatever device you're using.
+            </p>
+            <a href="#" class="grid__link icloud__button">LEARN MORE</a>
+          </div>
+          <div class="grid__block-6 column experience">
+            <h4
+              class="grid__title grid__title--light grid__title--bold experience__title"
+            >
+              Much MuchBetter Experience
+            </h4>
+            <picture>
+              <source
+                srcset="./img/experience.png, ./img/experience-2x.png 2x"
+                width="375"
+                height="147"
+                media="(max-width: 676px)"
+              />
+              <source
+                srcset="./img/experience.png, ./img/experience-2x.png 2x"
+                media="(max-width: 1200px)"
+                width="384"
+                height="151"
+              />
+              <source
+                srcset="./img/experience.png, ./img/experience-2x.png 2x"
+                width="700"
+                height="275"
+              />
+              <img
+                srcset="./img/experience.png"
+                alt="Image: Experience"
+                width="700"
+                height="275"
+              />
+            </picture>
+          </div>
+          <div class="grid__block-7 column games">
+            <picture>
+              <source
+                srcset="./img/games.png, ./img/games-2x.png 2x"
+                width="303"
+                height="167"
+              />
+              <img
+                srcset="./img/games.png"
+                alt="Image: Games"
+                width="303"
+                height="167"
+              />
+            </picture>
+            <h4 class="grid__title grid__title--margin">Games ourpasion</h4>
+            <a href="#" class="grid__link">LEARN ›</a>
+          </div>
+          <div class="grid__block-8 column">
+            <svg class="grid__icon" width="59" height="59">
+              <title>Icon: Dark Instagram</title>
+              <use xlink:href="./img/sprite.svg#dark__instagram"></use>
+            </svg>
+            <a href="#" class="grid__title grid__title--bold">Follow me ›</a>
+          </div>
+          <div class="grid__block-9 vision">
+            <picture>
+              <source
+                srcset="./img/tv.png, ./img/tv-2x.png 2x"
+                width="375"
+                height="237"
+                media="(max-width: 676px)"
+              />
+              <source
+                srcset="./img/tv.png, ./img/tv-2x.png 2x"
+                media="(max-width: 1200px)"
+                width="350"
+                height="215"
+              />
+              <source
+                srcset="./img/tv.png, ./img/tv-2x.png 2x"
+                width="350"
+                height="215"
+              />
+              <img
+                srcset="./img/tv.png"
+                alt="Image: TV"
+                width="350"
+                height="215"
+              />
+            </picture>
+            <h4 class="grid__title grid__title--light vision__title">
+              More than just a display, it's a vision
+            </h4>
+          </div>
         </div>
       </section>
     </main>

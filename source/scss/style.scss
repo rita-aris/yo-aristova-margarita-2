@@ -1260,7 +1260,7 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
 }
 
 .grid {
-  padding-top: 50px;
+  padding-top: 63px;
   &__wrapper {
     display: grid;
     grid-template-rows: repeat(7, 215px);
@@ -1281,6 +1281,8 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
       color: $primary;
     }
     &--margin {
+      text-align: center;
+      max-width: 170px;
       margin: 10px 0 20px 0;
     }
   }
@@ -1369,6 +1371,7 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
     margin-top: 50px;
   }
   &__title {
+    max-width: 220px;
     margin: 10px 0 20px 0;
   }
   &__more {
@@ -1426,18 +1429,37 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
 }
 
 .experience {
+  position: relative;
   padding-top: 71px;
   row-gap: 35px;
   &__title {
     text-align: center;
     max-width: 200px;
   }
+  &__label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: block;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+    color: $primary;
+    background: #fa684f;
+    border-radius: 3px;
+    max-width: 70px;
+    padding: 3px 5px;
+  }
 }
 
 .vision {
   display: flex;
   justify-content: center;
-  column-gap: 80px;
+  @media screen and (max-width: 1400px) {
+    justify-content: flex-start;
+    padding: 0 200px 0 200px;
+  }
   &__title {
     max-width: 190px;
     text-align: left;
@@ -1446,12 +1468,45 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
 }
 
 .icloud {
+  justify-content: flex-start;
+  padding: 192px 0 192px 0;
+  &__label {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: $primary;
+    text-transform: uppercase;
+    z-index: 3;
+    &--small {
+      background: #8972b6;
+      border-radius: 11px;
+      padding: 5px 15px;
+    }
+  }
+  &__image {
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+    &::before {
+      position: absolute;
+      top: -70px;
+      left: -55px;
+      display: block;
+      content: "";
+      width: 300px;
+      height: 300px;
+      background-color: #8066b0;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
   &__title {
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
     text-align: center;
     color: $primary;
+    margin: 52px 0 10px 0;
   }
   &__text {
     text-align: center;
@@ -1461,6 +1516,8 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
     background-color: #ffc80c;
     color: #2c3036;
     border-radius: 27px;
+    max-width: 170px;
     padding: 19px 41px;
+    margin-top: 30px;
   }
 }

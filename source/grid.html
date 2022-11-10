@@ -104,16 +104,16 @@
               <h4 class="grid__title retina__title">
                 Hardly a month passes these days where
               </h4>
-              <picture>
+              <picture class="retina__image">
                 <source
                   srcset="./img/imac.png, ./img/imac-2x.png 2x"
-                  width="100%"
+                  width="352"
                   height="164"
                 />
                 <img
                   srcset="./img/imac.png"
                   alt="Image: Keyboard"
-                  width="100%"
+                  width="352"
                   height="164"
                 />
               </picture>
@@ -128,21 +128,23 @@
             </div>
           </div>
           <div class="grid__block-5 column icloud">
-            <span class="icloud__label icloud__label--small">POPULAR</span>
-            <picture class="icloud__image">
-              <source
-                srcset="./img/disk.png, ./img/disk-2x.png 2x"
-                width="180"
-                height="186"
-              />
-              <img
-                srcset="./img/disk.png"
-                alt="Image: Diskette"
-                width="180"
-                height="186"
-              />
-            </picture>
-            <span class="icloud__label">MEET</span>
+            <div class="circle">
+              <span class="circle__label circle__label--small">POPULAR</span>
+              <picture>
+                <source
+                  srcset="./img/disk.png, ./img/disk-2x.png 2x"
+                  width="180"
+                  height="186"
+                />
+                <img
+                  srcset="./img/disk.png"
+                  alt="Image: Diskette"
+                  width="180"
+                  height="186"
+                />
+              </picture>
+              <span class="circle__label">MEET</span>
+            </div>
             <h4 class="icloud__title">iCloud</h4>
             <p class="grid__text grid__text--light icloud__text">
               With iCloud, you always have the latest versions of your most
@@ -161,15 +163,15 @@
             <picture>
               <source
                 srcset="./img/experience.png, ./img/experience-2x.png 2x"
-                width="375"
-                height="147"
-                media="(max-width: 676px)"
-              />
-              <source
-                srcset="./img/experience.png, ./img/experience-2x.png 2x"
                 media="(max-width: 1200px)"
                 width="384"
                 height="151"
+              />
+              <source
+                srcset="./img/experience.png, ./img/experience-2x.png 2x"
+                media="(max-width: 1300px)"
+                width="500"
+                height="275"
               />
               <source
                 srcset="./img/experience.png, ./img/experience-2x.png 2x"

@@ -1814,3 +1814,21 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
     padding-left: 0;
   }
 }
+
+.grid__link,
+.rotary__download,
+.follow__link {
+  &:hover,
+  &:active {
+    color: darken(#8972b6, 10%);
+    transition-duration: 0.4s;
+  }
+}
+
+.icloud__button {
+  &:hover,
+  &:active {
+    background: darken(#ffc80c, 10%);
+    transition-duration: 0.4s;
+  }
+}

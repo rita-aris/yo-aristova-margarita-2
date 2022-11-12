@@ -175,6 +175,225 @@
     &__taxi {
       bottom: 100px;
     }
+    &__message-3 {
+      bottom: 410px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .scene {
+    padding: 70px 0 50px 0;
+    &__lantern {
+      right: 160px;
+      bottom: -50px;
+    }
+    &__lanterns-1 {
+      left: 480px;
+      bottom: 100px;
+    }
+    &__lanterns-2 {
+      right: -50px;
+      bottom: 100px;
+    }
+    &__car-1,
+    &__car-2,
+    &__car-3,
+    &__car-4 {
+      bottom: 170px;
+    }
+    &__man {
+      left: 280px;
+      bottom: 0;
+    }
+    &__woman {
+      bottom: 0;
+    }
+    &__suitcases {
+      bottom: 20px;
+    }
+    &__man-hand {
+      bottom: 270px;
+      left: 314px;
+      width: 71px;
+      height: 102px;
+    }
+    &__woman-hand {
+      left: 220px;
+      bottom: 122px;
+      width: 50px;
+      height: 35px;
+    }
+    &__taxi {
+      width: 709px;
+      height: 213px;
+    }
+    &__message-1 {
+      left: 110px;
+      bottom: 240px;
+    }
+    &__message-2,
+    &__message-4 {
+      left: 300px;
+      bottom: 330px;
+    }
+    &__message-3 {
+      bottom: 330px;
+    }
+  }
+  .scale {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .scene {
+    &__car-1,
+    &__car-2,
+    &__car-3,
+    &__car-4 {
+      bottom: 130px;
+    }
+    &__lantern {
+      right: 117px;
+      bottom: -123px;
+    }
+    &__lanterns-1,
+    &__lanterns-2 {
+      bottom: 20px;
+    }
+    &__man {
+      bottom: -62px;
+      left: 222px;
+    }
+    &__woman {
+      bottom: -40px;
+      left: 165px;
+    }
+    &__suitcases {
+      bottom: 2px;
+      left: 143px;
+    }
+    &__man-hand {
+      bottom: 170px;
+      left: 280px;
+      width: 46px;
+      height: 64px;
+    }
+    &__woman-hand {
+      left: 200px;
+      bottom: 88px;
+      width: 32px;
+      height: 22px;
+    }
+    &__taxi {
+      bottom: 80px;
+      width: 443px;
+      height: 107px;
+    }
+    &__message-1 {
+      bottom: 140px;
+    }
+    &__message-3 {
+      bottom: 150px;
+      right: 500px;
+    }
+    &__message-2,
+    &__message-4 {
+      bottom: 190px;
+      left: 240px;
+    }
+  }
+  .scale {
+    transform: scale(0.5);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .scene {
+    &__car-1,
+    &__car-2,
+    &__car-3,
+    &__car-4 {
+      bottom: 100px;
+    }
+    &__lantern {
+      right: 60px;
+      bottom: -123px;
+    }
+    &__lanterns-1 {
+      left: 280px;
+      bottom: 0;
+    }
+    &__lanterns-2 {
+      bottom: 0;
+    }
+    &__man {
+      bottom: -62px;
+      left: 135px;
+    }
+    &__woman {
+      bottom: -40px;
+      left: 78px;
+    }
+    &__suitcases {
+      bottom: 2px;
+      left: 56px;
+    }
+    &__man-hand {
+      left: 193px;
+    }
+    &__woman-hand {
+      left: 113px;
+    }
+    &__message-1 {
+      left: 30px;
+    }
+    &__message-3 {
+      bottom: 150px;
+      left: 300px;
+    }
+    &__message-2,
+    &__message-4 {
+      left: 153px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .scene {
+    padding-top: 46px;
+    &__car-1,
+    &__car-2,
+    &__car-3,
+    &__car-4 {
+      bottom: 70px;
+    }
+    &__lantern {
+      bottom: -155px;
+      right: 20px;
+    }
+    &__lanterns-1 {
+      left: 230px;
+      bottom: -50px;
+    }
+    &__lanterns-2 {
+      bottom: -50px;
+    }
+    &__man-hand {
+      width: 36px;
+      height: 51px;
+    }
+    &__woman-hand {
+      width: 25px;
+      height: 18px;
+    }
+    &__taxi {
+      bottom: 60px;
+    }
+  }
+  .scale {
+    transform: scale(0.4);
   }
 }
 
@@ -229,5 +448,19 @@
   }
   100% {
     transform: rotate(150deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @keyframes drive2 {
+    50% {
+      transform: translateX(-1000px);
+    }
+    60% {
+      transform: translateX(-1010px);
+    }
+    100% {
+      transform: translateX(-2800px);
+    }
   }
 }
